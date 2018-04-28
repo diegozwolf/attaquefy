@@ -1,0 +1,12 @@
+
+<%= link_to "Volver", :back %>
+<h1><%= @issue.title %></h1>
+<p>
+  Creado por <%= @issue.user.email %> <%= @issue.created_at%>
+</p>
+
+
+<button type="button" name="button">Cerrar problema</button>
+<div>
+  <p><%= @issue.description %></p>
+</div>

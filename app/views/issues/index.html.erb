@@ -11,7 +11,8 @@
         <div><%= issue.description %></div>
       </td>
       <td><%= issue.open %></td>
-      <td><button type="button" class="btn btn-outline-light">Ver</button></td>
+
+      <td><button type="button" class="btn btn-outline-light"><%= link_to("Ver", issue_path(issue)) %></button></td>
     </tr>
 
   </tbody>
