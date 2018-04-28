@@ -23,13 +23,13 @@ ActiveRecord::Schema.define(version: 20180428003037) do
   end
 
   create_table "issues", force: :cascade do |t|
-    t.integer "user_id_id"
+    t.integer "user_id"
     t.string "title"
     t.string "description"
     t.boolean "open"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id_id"], name: "index_issues_on_user_id_id"
+    t.index ["user_id"], name: "index_issues_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

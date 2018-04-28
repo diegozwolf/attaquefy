@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+tarea1 = Issue.create(user_id: user1.id, title:"Arreglar el UI", description: "Mucho spam porque ya sabes", open:true)

@@ -1,17 +1,19 @@
 <h1>Problemas</h1>
 
-<%= User.all.inspect %>
-
+<!-- <%= Issue.all.inspect %> -->
+<%= link_to("Crear problema", new_issue_path) %>
 <table class="table table-sm table-dark">
   <tbody>
+    <% @issues.each do |issue| %>
     <tr>
       <td>
-        <div>Título</div>
-        <div>descripción ............</div>
+        <div><%= issue.title %></div>
+        <div><%= issue.description %></div>
       </td>
-      <td>Abierto</td>
+      <td><%= issue.open %></td>
       <td><button type="button" class="btn btn-outline-light">Ver</button></td>
     </tr>
 
   </tbody>
+  <% end %>
 </table>
